@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1094211657716",
+    "firebase_url": "https://ez-jobs.firebaseio.com",
+    "project_id": "ez-jobs",
+    "storage_bucket": "ez-jobs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094211657716:android:0c545d4ca4925c250b23a1",
+        "android_client_info": {
+          "package_name": "com.example.jobportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094211657716-fegd5d74f84brt5c3sf6i0fhk1bvvdlp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV02ufmACDWMWsQOeINy9YfqNRN_O6Ax4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094211657716-fegd5d74f84brt5c3sf6i0fhk1bvvdlp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

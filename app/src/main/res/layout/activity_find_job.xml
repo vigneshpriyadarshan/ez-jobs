@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    android:orientation="vertical"
+    tools:context=".employee.FindJob">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:text="Choose your preferences"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btnLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:text="Select your Location"
+        android:onClick="getLocation"/>
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10" />
+    <TextView
+        android:id="@+id/userCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:inputType="textPersonName"
+        android:hint="Select a Category in the list above"/>
+
+    <Button
+        android:id="@+id/btnFindJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:text="Find Job" />
+
+    <ListView
+        android:id="@+id/jobListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="86" />
+
+
+</LinearLayout>

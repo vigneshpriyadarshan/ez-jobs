@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jobportal">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".employee.ApplyJob"
+            android:label="Apply"
+            android:parentActivityName=".employee.FindJob"></activity>
+
+        <activity android:name=".employee.ApplicantJobView"
+            android:label="Job Details"
+            android:parentActivityName=".employee.EmployeeHome"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".helper.MapsActivity"
+            android:label="@string/title_activity_maps"
+            />
+
+        <activity android:name=".employer.ApplicantsList"
+            android:label="Applicants"
+            android:parentActivityName=".employer.EmployerJobView"/>
+        <activity
+            android:name=".employer.PostJob"
+            android:label="Post your Job"
+            android:parentActivityName=".employer.EmployerHome" />
+        <activity
+            android:name=".employee.FindJob"
+            android:label="Find a Job"
+            android:parentActivityName=".employee.EmployeeHome" />
+        <activity
+            android:name=".employer.EmployerJobView"
+            android:label="Job Details"
+            android:parentActivityName=".employer.EmployerHome" />
+        <activity
+            android:name=".employer.EmployerHome"
+            android:label="Home"
+            android:parentActivityName=".ui.login.LoginActivity"/>
+        <activity
+            android:name=".employee.EmployeeHome"
+            android:label="Home"
+            android:parentActivityName=".ui.login.LoginActivity"/>
+        <activity
+            android:name=".helper.RegisterActivity"
+            android:label="Register"
+            android:parentActivityName=".ui.login.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.login.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jobportal.MainActivity" />
+        </activity>
+        <activity android:name=".MainActivity"
+            android:label="EZ Jobs">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

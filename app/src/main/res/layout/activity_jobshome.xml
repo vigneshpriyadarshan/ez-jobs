@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    tools:context=".employee.EmployeeHome">
+
+    <Button
+        android:id="@+id/btnFindJob"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="Find a new Job"
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:text="Jobs Applied By You"
+        android:textAlignment="center" />
+
+        <ListView
+            android:id="@+id/jobsListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="86" />
+
+
+
+</LinearLayout>
